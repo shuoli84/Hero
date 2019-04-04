@@ -32,6 +32,9 @@ public enum HeroTransitionState: Int {
 
   // Hero's `start` method has been called. Preparing the animation.
   case starting
+  
+  // Involved viewControllers are loaded.
+  case beforeAnimate
 
   // Hero's `animate` method has been called. Animation has started.
   case animating

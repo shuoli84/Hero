@@ -48,7 +48,9 @@ extension HeroTransition {
         $0.heroWillStartAnimatingFrom?(viewController: fvc)
       }
     }
-
+    
+    state = .beforeAnimate
+    
     // take a snapshot to hide all the flashing that might happen
     fullScreenSnapshot = transitionContainer?.window?.snapshotView(afterScreenUpdates: false) ?? fromView?.snapshotView(afterScreenUpdates: false)
     if let fullScreenSnapshot = fullScreenSnapshot {

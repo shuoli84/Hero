@@ -24,7 +24,7 @@ import Foundation
 
 extension HeroTransition {
   open func animate() {
-    guard state == .starting else { return }
+    guard state == .beforeAnimate else { return }
     state = .animating
 
     if let toView = toView {
